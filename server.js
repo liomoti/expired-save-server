@@ -12,7 +12,7 @@ admin.initializeApp({
 
 console.log("server started");
 
-const job = schedule.scheduleJob('0 10 * * *', function () {
+const job = schedule.scheduleJob('0 15 * * *', function () {
   console.log('The answer to life, the universe, and everything!');
   var db = admin.database();
   var topic = 'general';
