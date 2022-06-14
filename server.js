@@ -1,8 +1,8 @@
 var admin = require("firebase-admin");
 
 const schedule = require('node-schedule');
-var serviceAccount = require("C:/Users/97252/Desktop/EXServerside/exdate-92f9d-firebase-adminsdk-320ph-601c17a07e.json");
-let User = require('C:/Users/97252/Desktop/EXServerside/username.js');
+var serviceAccount = require("./exdate-92f9d-firebase-adminsdk-320ph-601c17a07e.json");
+let User = require('./username.js');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://exdate-92f9d-default-rtdb.firebaseio.com",
